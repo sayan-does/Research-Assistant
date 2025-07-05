@@ -7,7 +7,9 @@ This guide explains how to set up and run the Personal Research Assistant bot lo
 ## Demonstration
 Below is a screenshot of the app in action:
 
-![Demo Screenshot](Screenshot_20250705_233532.png)
+<p align="center">
+  <img src="Screenshot_20250705_233532.png" alt="Demo Screenshot" width="700"/>
+</p>
 
 ---
 
