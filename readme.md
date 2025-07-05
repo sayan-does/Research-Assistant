@@ -1,5 +1,12 @@
 # Personal Research Assistant (RAG) - Local Setup Guide
 
+## Submission Checklist
+- [ ] Process Flow Chart, Design Document
+- [ ] Python Scripts (Preferably VS Code)
+- [ ] Project report with points from Step 5
+
+---
+
 This guide explains how to set up and run the Personal Research Assistant bot locally on your machine. The assistant enables offline research Q&A over uploaded PDFs using local language models and vector search.
 
 ---

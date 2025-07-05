@@ -1,5 +1,25 @@
 # Personal Research Assistant (RAG) - System Report
 
+## Process Flow Chart
+
+```mermaid
+flowchart TD
+    A[User uploads PDF(s) via Streamlit UI] --> B[PDF Parsing & Chunking]
+    B --> C[Embedding Chunks (SentenceTransformer)]
+    C --> D[Store Embeddings in FAISS Vector DB]
+    E[User submits research question] --> F[Retrieve relevant chunks from Vector DB]
+    F --> G[Build RAG Prompt (context + question)]
+    G --> H[Send prompt to Local SLM via Ollama]
+    H --> I[Generate Answer]
+    I --> J[Display answer in Streamlit Chat UI]
+    subgraph Evaluation
+        K[Run eval_models.py]
+        K --> L[Benchmark models on context, hallucination, inference time]
+        L --> M[Save results to model_eval_results.json]
+        M --> N[Summarize in model_comparison.md]
+    end
+```
+
 ## Overview
 This project implements a lightweight, offline-capable Personal Research Assistant using Retrieval-Augmented Generation (RAG). The assistant allows users to upload research papers (PDFs), which are parsed, chunked, and embedded into a local vector database. Users can then ask research questions, and the system retrieves relevant content and generates answers using a local small language model (SLM) via Ollama.
 
