@@ -1,4 +1,3 @@
-```mermaid
 flowchart TD
     A[User uploads PDF(s) via Streamlit UI] --> B[PDF Parsing & Chunking]
     B --> C[Embedding Chunks (SentenceTransformer)]
@@ -14,4 +13,3 @@ flowchart TD
         L --> M[Save results to model_eval_results.json]
         M --> N[Summarize in model_comparison.md]
     end
-```
