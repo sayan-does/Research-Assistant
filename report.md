@@ -4,11 +4,11 @@
 
 ```mermaid
 flowchart TD
-    A[User uploads PDF(s) via Streamlit UI] --> B[PDF Parsing & Chunking]
-    B --> C[Embedding Chunks (SentenceTransformer)]
+    A[User uploads PDF via Streamlit UI] --> B[PDF Parsing & Chunking]
+    B --> C[Embedding Chunks via SentenceTransformer]
     C --> D[Store Embeddings in FAISS Vector DB]
     E[User submits research question] --> F[Retrieve relevant chunks from Vector DB]
-    F --> G[Build RAG Prompt (context + question)]
+    F --> G[Build RAG Prompt <context + question>]
     G --> H[Send prompt to Local SLM via Ollama]
     H --> I[Generate Answer]
     I --> J[Display answer in Streamlit Chat UI]
