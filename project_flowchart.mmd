@@ -1,5 +1,5 @@
 flowchart TD
-    A[User uploads PDF(s) via Streamlit UI] --> B[PDF Parsing & Chunking]
+    A[User uploads PDF via Streamlit UI] --> B[PDF Parsing & Chunking]
     B --> C[Embedding Chunks (SentenceTransformer)]
     C --> D[Store Embeddings in FAISS Vector DB]
     E[User submits research question] --> F[Retrieve relevant chunks from Vector DB]
