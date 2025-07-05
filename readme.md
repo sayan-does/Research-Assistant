@@ -17,7 +17,7 @@ This guide explains how to set up and run the Personal Research Assistant bot lo
 
 ## 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/sayan-does/Research-Assistant
 cd st_chat
 ```
 
